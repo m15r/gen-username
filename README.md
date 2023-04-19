@@ -24,7 +24,7 @@ generateUsername({
 
 | Options      | Type        |           | Default value   |
 |--------------|-------------|-----------|-----------------|
-| maxLength    | `number`    | Maximum username length | 32 |
+| maxLength    | `number`    | Maximum username length | `32` |
 | capitalize   | `boolean`   | Start each word with a capital letter | `false` |
 | separator    | `string`    | Separator between words  | `undefined` |
 | numberLength | `number`    | Length of random trailing number | `0` |
