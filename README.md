@@ -1,6 +1,6 @@
 # Random Unique Username Generator
 
-Easily generates random and unique usernames from a dictionary with thousands of words. Simple and lightweight.
+Easily generate random and unique usernames from a dictionary with thousands of words. Simple and lightweight.
 
 ## Install
 
