@@ -9,7 +9,6 @@ import { generateUsername } from "generate-username"
 
 generateUsername({
     capitalize: true,
-    separator: '',
     numberLength: 3
 })
 
