@@ -1,4 +1,5 @@
 type Options = {
+    maxLength?: number
     capitalize?: boolean
     separator?: string
     numberLength?: number
@@ -23,11 +24,15 @@ function capitalize(str: string) {
 
 export function generateUsername(options?: Options) {
     const dictionaries = [adjectives,nouns]
-    const parts = dictionaries.map(dy => {
-        const word = dy[Math.floor((Math.random()*dy.length))]
-        return options?.capitalize ? capitalize(word) : word
-    })
-    let username = parts.join(options?.separator ?? '')
-    if (options?.numberLength) username += generateRandomNumber(options.numberLength).toString()
+    const maxLength = options?.maxLength ?? 32
+    let username: string | undefined = undefined
+    while (!username || username?.length > maxLength) {
+        const parts = dictionaries.map(dy => {
+            const word = dy[Math.floor((Math.random()*dy.length))]
+            return options?.capitalize ? capitalize(word) : word
+        })
+        username = parts.join(options?.separator ?? '')
+        if (options?.numberLength) username += generateRandomNumber(options.numberLength).toString()
+    }
     return username
 }
