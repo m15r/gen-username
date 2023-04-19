@@ -1,11 +1,17 @@
-# Username Generator
+# Random Unique Username Generator
 
 Simple lightweight script that generates unique usernames for you.
 
+## Install
 
+```
+npm i gen-username
+```
+
+## Usage
 
 ```ts
-import { generateUsername } from "generate-username"
+import { generateUsername } from "gen-username"
 
 generateUsername({
     maxLength: 16,
