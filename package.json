@@ -1,0 +1,23 @@
+{
+    "name": "username-generator",
+    "description": "Username Generator",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/m15r/username-generator"
+    },
+    "author": "Milon Kremer",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "npx tsc"
+    },
+    "files": [
+        "/dist"
+    ],
+    "devDependencies": {
+        "@types/node": "^18.15.11",
+        "typescript": "^4.6.3"
+    }
+}
