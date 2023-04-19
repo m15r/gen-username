@@ -1,6 +1,6 @@
 # Random Unique Username Generator
 
-Simple lightweight script that generates unique usernames for you.
+Simple lightweight script that generates random and unique usernames.
 
 ## Install
 
