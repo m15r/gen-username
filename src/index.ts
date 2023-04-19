@@ -1,6 +1,6 @@
 type Options = {
     capitalize?: boolean
-    seperator?: string
+    separator?: string
     numberLength?: number
 }
 
@@ -27,7 +27,7 @@ export function generateUsername(options?: Options) {
         const word = dy[Math.floor((Math.random()*dy.length))]
         return options?.capitalize ? capitalize(word) : word
     })
-    let username = parts.join(options?.seperator ?? '')
+    let username = parts.join(options?.separator ?? '')
     if (options?.numberLength) username += generateRandomNumber(options.numberLength).toString()
     return username
 }
