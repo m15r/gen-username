@@ -8,7 +8,7 @@ Simple lightweight script that generates unique usernames for you.
 import { generateUsername } from "generate-username"
 
 generateUsername({
-    maxLength: 16
+    maxLength: 16,
     capitalize: true,
     numberLength: 3
 })
