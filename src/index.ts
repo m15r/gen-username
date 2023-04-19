@@ -25,14 +25,15 @@ function capitalize(str: string) {
 export function generateUsername(options?: Options) {
     const dictionaries = [adjectives,nouns]
     const maxLength = options?.maxLength ?? 32
+    const numberLength = options?.numberLength ?? 3
     let username: string | undefined = undefined
-    while (!username || username?.length > maxLength) {
+    while (!username || (username?.length + numberLength) > maxLength) {
         const parts = dictionaries.map(dy => {
             const word = dy[Math.floor((Math.random()*dy.length))]
             return options?.capitalize ? capitalize(word) : word
         })
         username = parts.join(options?.separator ?? '')
-        if (options?.numberLength) username += generateRandomNumber(options.numberLength).toString()
     }
+    if (numberLength > 0) username += generateRandomNumber(options?.numberLength ?? 3).toString()
     return username
 }
