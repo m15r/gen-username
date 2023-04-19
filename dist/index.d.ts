@@ -1,6 +1,7 @@
 type Options = {
+    maxLength?: number;
     capitalize?: boolean;
-    seperator?: string;
+    separator?: string;
     numberLength?: number;
 };
 export declare function generateUsername(options?: Options): string;

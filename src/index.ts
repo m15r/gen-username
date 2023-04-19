@@ -5,11 +5,11 @@ type Options = {
     numberLength?: number
 }
 
-const adjectives = require('./dictionaries/adjectives.json')
+const adjectives = require('../dictionaries/adjectives.json')
 
 const nouns = [
-    ...require('./dictionaries/nouns/animals.json'),
-    ...require('./dictionaries/nouns/household.json')
+    ...require('../dictionaries/nouns/animals.json'),
+    ...require('../dictionaries/nouns/household.json')
 ]
 
 function generateRandomNumber(length: number) {
