@@ -32,5 +32,5 @@ generateUsername({
 |--------------|-------------|-----------|-----------------|
 | maxLength    | `number`    | Maximum username length. Trailing number included. | `32` |
 | capitalize   | `boolean`   | Capitalize words | `false` |
-| separator    | `string`    | Separator between words  | `undefined` |
+| separator    | `string`    | Separator between words  | `""` |
 | numberLength | `number`    | Length of random trailing number. Use `0` to disable. | `3` |
