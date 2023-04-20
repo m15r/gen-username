@@ -1,7 +1,8 @@
 {
     "name": "gen-username",
     "description": "Random Unique Username Generator",
-    "version": "1.0.3",
+    "keywords": ["username generator","username","unique","random"],
+    "version": "1.0.4",
     "license": "MIT",
     "repository": {
         "type": "git",
