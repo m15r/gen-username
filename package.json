@@ -1,20 +1,21 @@
 {
     "name": "gen-username",
     "description": "Random Unique Username Generator",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git+https://gitlab.com/m15r/gen-username"
     },
-    "author": "Milon Kremer",
+    "author": "m15r",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "npx tsc"
     },
     "files": [
-        "/dist"
+        "dist/**",
+        "dictionaries/**"
     ],
     "devDependencies": {
         "@types/node": "^18.15.11",
