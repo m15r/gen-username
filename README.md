@@ -13,7 +13,7 @@ npm i gen-username
 ```ts
 import { generateUsername } from "gen-username"
 
-generateUsername({
+const username = generateUsername({
     maxLength: 16,
     capitalize: true,
     numberLength: 3
