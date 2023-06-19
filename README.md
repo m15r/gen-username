@@ -30,7 +30,7 @@ generateUsername({
 
 | Options      | Type        |           | Default value   |
 |--------------|-------------|-----------|-----------------|
-| maxLength    | `number`    | Maximum username length. Trailing number included. | `32` |
+| maxLength    | `number`    | Maximum username length, including trailing number. | `32` |
 | capitalize   | `boolean`   | Capitalize words | `false` |
 | separator    | `string`    | Separator between words  | `""` |
 | numberLength | `number`    | Length of random trailing number. Use `0` to disable. | `3` |
